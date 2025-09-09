@@ -17,7 +17,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Example: sh 'mvn sonar:sonar'
+            }
+        }
+        
+         stage('Comple') {
+            steps {
+                echo 'Completed!'
             }
         }
     }
